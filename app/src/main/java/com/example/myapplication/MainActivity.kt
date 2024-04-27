@@ -14,9 +14,14 @@ class MainActivity : AppCompatActivity() {
 //        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         val loginButton: Button = findViewById(R.id.buttonLogin)
+        val regisButton: Button = findViewById(R.id.buttonSignup)
         loginButton.setOnClickListener {
 //            panggil fungsi untuk melakukan login
             performLogin()
+        }
+        regisButton.setOnClickListener {
+//            panggil fungsi untuk melakukan login
+            performRegister()
         }
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
 //            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -27,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
     fun performLogin() {
 //        val retrofit = Retrofit.Builder()
-        Toast.makeText(applicationContext, "Testing", Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext, "Success Login!", Toast.LENGTH_SHORT).show()
+    }
+    fun performRegister() {
+//        val retrofit = Retrofit.Builder()
+        Toast.makeText(applicationContext, "Success Register!", Toast.LENGTH_SHORT).show()
     }
 }
