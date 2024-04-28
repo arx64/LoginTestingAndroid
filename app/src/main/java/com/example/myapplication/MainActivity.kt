@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             val email = emailText.text.toString() // Ambil teks dari TextView
             val password = passwordText.text.toString() // Ambil teks dari TextView
 
-            Toast.makeText(applicationContext, "mencoba register dengan ${email} dan ${password}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "mencoba register dengan $email dan $password", Toast.LENGTH_SHORT).show()
             if (email.isEmpty()) {
                 Toast.makeText(applicationContext, "Email tidak boleh kosong!", Toast.LENGTH_SHORT).show()
             }
